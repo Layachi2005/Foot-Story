@@ -103,12 +103,65 @@ header h1 {
     border-radius: 10px;
 }
 
+.sign-login div a:nth-of-type(2):hover {
+    color: #A03333;
+    background-color: rgb(225, 225, 225);
+}
+
 .sign-login div a:nth-of-type(2) p {
     margin: 0px;
     align-self: center;
+}
+
+.sign-login button {
+    background: none;
+    border-style: none;
 }
 
 .sign-login img {
     width: 50px;
     height: 50px;
 }
+body {
+    background-color: #7b2929;
+}
+
+.imgcaf {
+    width: 200px;
+    height: 450px;
+    margin-left: 100px;
+    margin-top: 90px;
+    
+
+}
+
+.imgeuro {
+    width: 200px;
+    height: 450px;
+    margin-left: 200px;
+    margin-top: 90px;
+}
+
+.imgasian {
+    width: 200px;
+    height: 450px;
+    margin-left: 200px;
+    margin-top: 90px;
+
+}
+
+.imgamerica {
+    width: 200px;
+    height: 500px;
+    margin-left: 200px;
+    margin-top: 90px;
+}
+
+.imgworld {
+    width: 300px;
+    height: 500px;
+    margin-left: 70px;
+    margin-top: 120px;
+
+}
+ 
