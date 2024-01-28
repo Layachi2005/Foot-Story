@@ -126,42 +126,22 @@ body {
     background-color: #7b2929;
 }
 
-.imgcaf {
-    width: 200px;
-    height: 450px;
-    margin-left: 100px;
-    margin-top: 90px;
+.cup {
+    display: flex;
+    flex-direction: column;
     
-
 }
 
-.imgeuro {
-    width: 200px;
-    height: 450px;
-    margin-left: 200px;
-    margin-top: 90px;
-}
-
-.imgasian {
-    width: 200px;
-    height: 450px;
-    margin-left: 200px;
-    margin-top: 90px;
-
-}
-
-.imgamerica {
-    width: 200px;
-    height: 500px;
-    margin-left: 200px;
-    margin-top: 90px;
-}
-
-.imgworld {
+.cup div a img {
     width: 300px;
-    height: 500px;
-    margin-left: 70px;
-    margin-top: 120px;
+    height: 300px;
 
 }
- 
+
+.cup div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 70px;
+}
