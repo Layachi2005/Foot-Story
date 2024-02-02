@@ -20,6 +20,7 @@ body {
     align-items: center;
     font-size: 33px;
     list-style: none;
+    margin: 0px;
    
 }
 .div li {
@@ -85,50 +86,27 @@ body {
 }
 
 .preview img:nth-of-type(2) {
-    width: 58%;
+    width: 60%;
     margin-left: 10px;
 }
 
-
-
-
-
-
-.sm {
+.preview div {
+    width: 19%;
     display: flex;
-    font-size: 30px;
-    color: gray;
-    align-items: center;
     justify-content: space-evenly;
+    flex-direction: column;
 }
-.item1 {
-    display: flex;
+
+.preview div a {
+    height: 50px;
+    text-align: center;
 }
-.i1 {
-    margin-left: 8px;
-}
-.item2 {
-    display: flex;
-}
-.i2 {
-    margin-left: 8px;
-}
-.item3 {
-    display: flex;
-}
-.i3 {
-    margin-left: 4px;
-}
-.gmailimg {
-    width: 42px;
-    height: 32px;
-}
-.instagramimg {
-    width: 37px;
-}
-.twitterimg {
-    width: 42px;
-}
+
+
+
+
+
+
 @media (max-width: 800px) {
 body {
     .logo {
@@ -203,8 +181,18 @@ body {
 }
 }
 .khlf{
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-image: url(.//images/backround-site.jpg);
 }
+
+footer p {
+    margin: 0px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
 .haha {
     background-image: url(.//images/haha.jpg);
     margin-bottom: 0px;
