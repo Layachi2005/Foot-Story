@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Math Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .question {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .result {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="question" id="question"></div>
+    <input type="number" id="answer" placeholder="Your answer">
+    <button onclick="checkAnswer()">Submit</button>
+    <div class="result" id="result"></div>
+    <div class="score" id="score"></div>
+
+    <script>
+        let correctAnswer;
+        let rightAnswers = 0;
+        let wrongAnswers = 0;
+
+        function generateQuestion() {
+            const num1 = Math.floor(Math.random() * 10) + 1;
+            const num2 = Math.floor(Math.random() * 10) + 1;
+            const operator = Math.random() < 0.5 ? '+' : '-';
+            
+            correctAnswer = operator === '+' ? num1 + num2 : num1 - num2;
+
+            document.getElementById('question').innerText = `What is ${num1} ${operator} ${num2}?`;
+            document.getElementById('answer').value = '';
+            document.getElementById('result').innerText = '';
+        }
+
+        function checkAnswer() {
+            const userAnswer = parseInt(document.getElementById('answer').value);
+            if (userAnswer === correctAnswer) {
+                document.getElementById('result').innerText = 'Correct!';
+                rightAnswers++;
+            } else {
+                document.getElementById('result').innerText = `Wrong! The correct answer was ${correctAnswer}.`;
+                wrongAnswers++;
+            }
+            document.getElementById('score').innerText = `Right Answers: ${rightAnswers} | Wrong Answers: ${wrongAnswers}`;
+            generateQuestion();
+        }
+
+        generateQuestion();
+
+    </script>
+</body>
+</html>
